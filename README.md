@@ -1,8 +1,9 @@
 # Project Address_book
 
 Командна проект Python CLI Assistant "курс Python Core". TEAM_10
+[Презентація] (https://docs.google.com/presentation/d/1-O-7II6YCZ0ygWs47Ze4AorIQfSM5ccVOKKWGod-yjg/edit#slide=id.g10f42b85138_2_1005)
 
-![Logo](https://github.com/Pythongitgoit/privat/blob/main/team_10.jpg)
+![Logo](https://github.com/VolodymyrPruhlo/Team_10_CP/blob/dev/Documentation/team_10.jpg)
 
 ## Table of Contents
 

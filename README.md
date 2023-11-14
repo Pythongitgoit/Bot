@@ -23,7 +23,13 @@
 При створенні нотаток можливо додавати ключові слова, за якими можна проводити сортування та пошук. Сортування файлів у папці здійснюється за типами файлів: аудіо, відео, документи, зображення, архіви, інше. Команда "help" показує усі доступні команди для користувача .
 
 ## Usage
-
+Adressbook - зберігає контакти
+    Contact name: John Doe, Email: john@example.com, Phone: 1234567890, Address: City, Street, 123, Birthday: 1990-01-01
+    Contact name: Alice Smith, Email: alice@example.com, Phone: 9876543210, Address: Town, Avenue, 456, Birthday: 1985-05-15
+    Contact name: Bob Johnson, Email: bob@example.com, Phone: 5551234567, Address: Village, Lane, 789, Birthday: 1978-08-20
+    Contact name: Eva Davis, Email: eva@example.com, Phone: 1112223333, Address: Suburb, Park, 101, Birthday: 1992-03-10
+    Contact name: Michael Brown, Email: michael@example.com, Phone: 9998887777, Address: Rural, Meadow, 505, Birthday: 1980-06-25        
+    Contact name: Sophie White, Email: sophie@example.com, Phone: 4445556666, Address: Island, Beach, 222, Birthday: 1995-11-05
 
 “Помічник” - сортує файли у зазначеній папці за такими категоріями:
 

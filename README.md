@@ -24,7 +24,22 @@
 
 ## Usage
 
-To get started, clone this repository and follow the installation instructions in the [Installation](#installation) section.
+
+“Помічник” - сортує файли у зазначеній папці за такими категоріями:
+
+    "Audio": [".mp3", ".ogg", ".wav", ".amr"]
+     
+    "Documents": [".docx", ".doc", ".txt", ".pdf", ".xlsx", ".pptx"],
+    
+    "Video": [".avi", ".mp4", ".mov", ".mkv"],
+
+    "Image": [".jpeg", ".png", .jpg", ".svg"],
+
+    "Archive": [".zip",".gz", ".tar"]
+ 
+    "Unknown":[]
+
+
 
 ## Commands
 

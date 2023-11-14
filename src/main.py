@@ -225,7 +225,7 @@ def change_contact(address_book, contact_name):
             new_name = input("Enter the new name: ")
             contact.name.value = new_name
             print(f"Contact name changed to {new_name}")
-            break
+            continue
         elif field_to_change == 'phone' or field_to_change in 'phone':
             if contact.phones:
                 old_phone = input("Enter the old phone number: ")
@@ -245,7 +245,7 @@ def change_contact(address_book, contact_name):
                     else:
                         contact.add_phone(new_phone)
                         print(f"Phone number {new_phone} added")
-                    break
+                    continue
                 except ValueError as e:
                     print(f"Error: {e}")
             else:
@@ -269,7 +269,7 @@ def change_contact(address_book, contact_name):
                     else:
                         contact.add_email(new_email)
                         print(f"Email address {new_email} added")
-                    break
+                    continue
                 except ValueError as e:
                     print(f"Error: {e}")
             else:
@@ -302,7 +302,7 @@ def change_contact(address_book, contact_name):
                         else:
                             contact.add_address(new_city, new_street, new_house)
                             print(f"Address {new_address} added")
-                        break
+                        continue
                     else:
                         print("Invalid new address format.")
                 except (ValueError, IndexError) as e:
@@ -321,7 +321,7 @@ def change_contact(address_book, contact_name):
             else:
                 contact.birthday = None
                 print("Birthday cleared.")
-            break
+            continue
         else:
             print("Invalid field to change.")
 

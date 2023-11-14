@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 import pickle
 import atexit
 import os
@@ -47,6 +47,7 @@ def help_func():
         "all notes": "Вивід всіх наявних нотатків: ця команда виводить список всіх нотаток",
         "change note": "Редагування нотатків: ця команда дозволяж редагувати нотатки і теги.",
         "delete note": "Видалення нотатки: ця команда видаляє нотатку",
+        "birthday": "Список іменинників: ця команда показує список іменинників на найближчий тиждень",
         "help": "Список всіх команд"
     }
 
@@ -106,9 +107,9 @@ def add_contact(address_book):
                 if birthday:
                     birthday = datetime.strptime(birthday, "%Y-%m-%d")
                 break
-            except (ValueError, IndexError) as e:
+            except ValueError as e:
                 print(f"Error: {e}")
-                birthday = input("Enter the birthday: ")
+                birthday = input("Enter a valid birthday in the format YYYY-MM-DD (or press Enter to skip): ")
 
         contact = objects.Record(name.name, birthday)
         if phone:
@@ -324,6 +325,27 @@ def change_contact(address_book, contact_name):
             continue
         else:
             print("Invalid field to change.")
+
+
+def show_birthday_this_week(address_book):
+    current_date = datetime.now()
+    end_of_week = current_date + timedelta(days=(6 - current_date.weekday()) + 7)  # Find the end of the current week
+
+    birthday_contacts = []
+
+    for records in address_book.values():
+        for contact in records:
+            if contact.birthday and contact.birthday.birthday:
+                birthday_date = contact.birthday.birthday.replace(year=current_date.year)  # Assume the birthday is in the current year
+                if current_date <= birthday_date <= end_of_week:
+                    birthday_contacts.append(contact)
+
+    if birthday_contacts:
+        print("Birthday persons this week:")
+        for contact in birthday_contacts:
+            print(f"Name: {contact.name.value}, Birthday: {contact.birthday.birthday.strftime('%Y-%m-%d')}")
+    else:
+        print("No birthdays this week.")
 
 
 def change_note(notes, note_text):
@@ -580,6 +602,8 @@ def main():
         elif user_input == 'delete note':
             keywords = input('Enter keyword to search note: ')
             delete_note(notes, keywords)
+        elif user_input == 'birthday' or user_input == 'bd':
+            show_birthday_this_week(address_book)
         else:
             process_command(user_input, address_book)
 

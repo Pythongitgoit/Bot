@@ -1,5 +1,5 @@
 # Project Address_book
-#Командна проект Python CLI Assistant "курс Python Core". TEAM_10
+# Командна проект Python CLI Assistant "курс Python Core". TEAM_10
 
 ## [Презентація проекту](https://docs.google.com/presentation/d/1-O-7II6YCZ0ygWs47Ze4AorIQfSM5ccVOKKWGod-yjg/edit#slide=id.g10f42b85138_2_1005)
 

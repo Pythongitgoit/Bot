@@ -39,7 +39,7 @@ Successfully installed Team-10-CP-0.0.1
 [notice] A new release of pip is available: 23.2.1 -> 23.3.1
 [notice] To update, run: python.exe -m pip install --upgrade pip
 
-C:\Users\user\Desktop\test\Team_10_CP>start
+C:\Users\user\Desktop\test\Team_10_CP>start_bot
 
 C:\Users\user\Desktop\test\Team_10_CP>pip list
 Package                   Version

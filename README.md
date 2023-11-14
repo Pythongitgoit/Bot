@@ -32,6 +32,19 @@ Adressbook - зберігає контакти у наступному виді:
     Contact name: Michael Brown, Email: michael@example.com, Phone: 9998887777, Address: Rural, Meadow, 505, Birthday: 1980-06-25      
     Contact name: Sophie White, Email: sophie@example.com, Phone: 4445556666, Address: Island, Beach, 222, Birthday: 1995-11-05
 
+“Помічник” вміє працювати з нотатками + теги
+    List of all notes:
+    1. Text: Meeting at 2 PM   
+       Tags: work, meeting     
+    2. Text: Grocery shopping  
+       Tags: personal, shopping
+    3. Text: Code review       
+       Tags: work, development 
+    4. Text: Book club meeting 
+       Tags: personal, reading 
+    5. Text: Project deadline  
+       Tags: work, deadline
+   
 “Помічник” - сортує файли у зазначеній папці за такими категоріями:
 
     "Audio": [".mp3", ".ogg", ".wav", ".amr"]
